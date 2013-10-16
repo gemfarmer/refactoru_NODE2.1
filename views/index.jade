@@ -1,0 +1,21 @@
+mixin partners(people)
+	-for (var i = 0; i < people.length; i++) {
+		li.people= people[i]
+	-}
+	
+extends layout
+
+block content
+	div.wrapper
+		h1= imjaded
+		p Welcome to #{imjaded}
+		h2 Resources
+
+		a(href='http://fall2013.refactoru.com' target="_blank") Student Site
+		br 
+		
+
+		ul.list Hellow Thare
+			+partners(whosjaded)
+
+
